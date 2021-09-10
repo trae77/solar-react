@@ -1,0 +1,23 @@
+[
+  {
+    "city": "denver",
+    "lat": 43,
+    "long": 56 ,
+    "score": 6
+  },
+  {
+    "city": "detroit",
+    "lat": 43,
+    "long": 56 ,
+    "score": 3
+  
+  },
+  {
+    "city": "los angeles",
+    "lat": 43,
+
+"long": 56 ,
+"score": 6
+
+  }
+]
