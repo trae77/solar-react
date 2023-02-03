@@ -4,9 +4,9 @@ import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
 import SearchResults from "../components/SearchResults";
 import Alert from "../components/Alert";
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import { Redirect } from 'react-router-dom';
+// import ReactDOM from 'react-dom';
+// import { BrowserRouter } from 'react-router-dom';
+// import { Redirect } from 'react-router-dom';
 const withAuth = require('../utils/auth');
 
 var lat = [];
