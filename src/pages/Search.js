@@ -21,9 +21,11 @@ class Search extends Component {
     solars: "",
     // breeds: [],
     redirect:"",
-    results: null,
+    results: [],
     error: "",
   };
+ 
+ 
 
   handleInputChange = (event) => {
     this.setState({ city: event.target.value });
@@ -63,37 +65,20 @@ class Search extends Component {
        
             this.setState({solars: solar });
            
-            console.log(this.state.solar , "fry");
-          
+            
+            console.log(this.state.solars);
             if (res.data.status === "error") {
               throw new Error(res.data);
             }
             console.log(solar , "fish");
             this.setState({ results: annualDNI, error: "" });
-            console.log(this.results , "mayor");
           })
           .catch((err) => this.setState({ error: err.message }));
+        
       });
-
   };
 
-//   if (this.state.solars <= 3) {
-//     console.log("good ");
-// } else {
-//  console.log("bad");
-// }
- 
-  // .catch(err => this.setState({ error: err.message t}));
 
-  //   API.getIrradiance(lat, long)
-  //   .then(res => {
-  //     if (res.data.status === "error") {
-  //       throw new Error(res.data);
-  //     }
-  //     this.setState({ results: res.data, error: "" });
-  //   })
-  //   .catch(err => this.setState({ error: err.message }));
-  // };
 
   render( ) {
    
@@ -116,10 +101,7 @@ class Search extends Component {
             cost={this.state.cost}
             search={this.state.search}
           />
-          {/* if(this.state.results > 3){
-<Redirect to="/good" />
-          } */}
-          <SearchResults results={this.state.results , "yo"} />
+          <SearchResults results={ "your result : " + this.state.solars} />
         </Container>
       </div>
     );
