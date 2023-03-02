@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import React from "react";
+// import { Link, useParams } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
-import Jumbotron from "../components/Jumbotron";
-import SearchForm from "../components/SearchForm";
+// import Jumbotron from "../components/Jumbotron";
+// import SearchForm from "../components/SearchForm";
 import SearchResults from "../components/SearchResults";
-import API from "../utils/API";
+// import API from "../utils/API";
 import "./style.css"
-import SaveButton from '../components/SaveButton'
-import BackButton from '../components/BackButton'
+// import SaveButton from '../components/SaveButton'
+// import BackButton from '../components/BackButton'
 
 function Bad(props) {
 
@@ -46,12 +46,12 @@ function Bad(props) {
           </li>
         </ul>
         
-        <SaveButton to='/profile'>Save My Score</SaveButton>
+        {/* <SaveButton to='/profile'>Save My Score</SaveButton> */}
   
         <Row>
           <Row>
       
-          <BackButton to='/about'>Back to SolarCalc</BackButton>
+          {/* <BackButton to='/about'>Back to SolarCalc</BackButton> */}
           </Row>
         </Row>
             

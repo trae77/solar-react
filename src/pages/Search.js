@@ -4,7 +4,11 @@ import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
 import SearchResults from "../components/SearchResults";
 import Alert from "../components/Alert";
-import { Redirect } from "react-router-dom";
+// import  Redirect from "react-router-dom/Redirect";
+
+
+
+
 // import withAuth from "../utils/auth";
 
 var lat = [];
@@ -18,7 +22,7 @@ class Search extends Component {
     solars: "",
     results: [],
     error: "",
-    redirect: false,
+    // redirect: false,
   };
 
   handleInputChange = (event) => {
@@ -60,23 +64,23 @@ class Search extends Component {
           })
           .catch((err) => this.setState({ error: err.message }));
       })
-      .then(() => {
-        this.setState({ redirect: true });
-      });
+      // .then(() => {
+      //   this.setState({ redirect: true });
+      // });
   };
 
   render() {
-    const { redirect } = this.state;
+    // const { redirect } = this.state;
 
-    if (redirect) {
-      if (this.state.solar > 3) {
-        console.log("hit");
-        console.log(this.state.solar);
-        return <Redirect to="/Good" />;
-      } else {
-        return <Redirect to="/Bad" />;
-      }
-    }
+    // if (redirect) {
+    //   if (this.state.solar > 3) {
+    //     console.log("hit");
+    //     console.log(this.state.solar);
+    //     return <Redirect to="/Good" />;
+    //   } else {
+    //     return <Redirect to="/Bad" />;
+    //   }
+    // }
 
     return (
       <div>
