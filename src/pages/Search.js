@@ -4,7 +4,8 @@ import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
 import SearchResults from "../components/SearchResults";
 import Alert from "../components/Alert";
-import { Navigate } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
+// import { Navigate } from "react-router-dom";
 // import withAuth from "../utils/auth";
 
 var lat = [];
@@ -72,10 +73,16 @@ class Search extends Component {
       if (this.state.solar > 3) {
         console.log("hit");
         console.log(this.state.solar);
-        return <Navigate to="/Good" />;
+        // return <Redirect to="/Good" />;
       } else {
-        return <Navigate to="/Bad" />;
+        console.log("hit");
+        console.log(this.state.solar);
+        // return <Redirect to="/Bad" />;
       }
+      //   return < to="/Good" />;
+      // } else {
+      //   return < to="/Bad" />;
+      // }
     }
 
     return (
